@@ -1,12 +1,8 @@
 <p align="center">
-  <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker Logo" width="140">
+  <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker Logo" width="98">
 </p>
 
 <h1 align="center">Awesome Docker</h1>
-
-<p align="center">
-  <em>A curated collection of Docker modules, commands, architectures, and production workflows.</em>
-</p>
 
 <p align="center">
   <a href="https://awesome.re"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/awesome.svg?variant=outline&amp;mode=dark&amp;font=geist&amp;logo=awesomelists" /><img alt="awesome" src="https://shieldcn.dev/badge/awesome.svg?variant=outline&amp;mode=light&amp;font=geist&amp;logo=awesomelists" /></picture></a>
@@ -16,7 +12,10 @@
   <a href="https://github.com/bhagirath00/awesome-docker"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/views/repo/bhagirath00/awesome-docker.svg?variant=outline&amp;mode=dark&amp;font=geist" /><img alt="views" src="https://shieldcn.dev/views/repo/bhagirath00/awesome-docker.svg?variant=outline&amp;mode=light&amp;font=geist" /></picture></a>
 </p>
 
----
+<p align="center">
+  <em>A curated collection of Docker modules, commands, architectures, and production workflows.</em>
+</p>
+
 
 ## Table of Contents
 
