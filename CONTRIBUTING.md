@@ -1,6 +1,6 @@
 # Contributing to Docker for DevOps
 
-Thank you for your interest in contributing to **Docker for DevOps**! We welcome contributions from the community.
+Thank you for your interest in contributing to **awesome docker**! We welcome contributions from the community.
 
 ## How to Contribute
 
@@ -17,7 +17,7 @@ If you find a bug in the code examples or have a suggestion for the content:
 1. **Fork** the repository
 2. **Clone** your fork locally:
    ```bash
-   git clone https://github.com/Bhagirath00/Docker-for-DevOps.git
+   git clone https://github.com/bhagirath00/awesome-docker.git
    ```
 3. Create a **branch** for your changes:
    ```bash
@@ -26,7 +26,7 @@ If you find a bug in the code examples or have a suggestion for the content:
 4. Make your changes following the style guide below
 5. **Commit** your changes:
    ```bash
-   git commit -m "feat: Add your feature description"
+   git commit -m "Add your feature description"
    ```
 6. **Push** to your fork:
    ```bash
