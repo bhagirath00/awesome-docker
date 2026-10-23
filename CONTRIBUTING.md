@@ -1,71 +1,68 @@
-# Contributing to Docker for DevOps
+# Contributing to Awesome Docker
 
-Thank you for your interest in contributing to **awesome docker**! We welcome contributions from the community.
+Thank you for your interest in contributing to **Awesome Docker**! We welcome contributions, bug fixes, enhancements, and architectural best practices from the community.
+
+---
 
 ## How to Contribute
 
-### Reporting Content Issues
-
-If you find a bug in the code examples or have a suggestion for the content:
-
-1. Check if the issue already exists
-2. Open a new issue with a clear title and description
-3. Include steps to reproduce (for code bugs)
+### Reporting Issues
+If you identify a bug in any Docker command, syntax error in Dockerfiles, broken links, or have suggestions for new workflows:
+1. Check existing issues to verify if the topic has already been reported.
+2. Open a new issue with a clear, descriptive title and explanation.
+3. Include your Docker version (`docker version`), host OS, and steps to reproduce.
 
 ### Making Changes
 
-1. **Fork** the repository
+1. **Fork** the repository to your GitHub account.
 2. **Clone** your fork locally:
    ```bash
    git clone https://github.com/bhagirath00/awesome-docker.git
+   cd awesome-docker
    ```
-3. Create a **branch** for your changes:
+3. Create a descriptive feature **branch**:
    ```bash
    git checkout -b feature/your-feature-name
    ```
-4. Make your changes following the style guide below
+4. Make your changes adhering to the style guide below.
 5. **Commit** your changes:
    ```bash
-   git commit -m "Add your feature description"
+   git commit -m "feat(module-09): add buildkit cache mount examples"
    ```
 6. **Push** to your fork:
    ```bash
    git push origin feature/your-feature-name
    ```
-7. Open a **Pull Request**
-
-## Style Guide 
-
-### Code & Configuration
-
-- Use official base images (e.g., `python:slim` instead of full OS)
-- Follow Dockerfile best practices (layers, cache, etc.)
-- Use clear naming conventions for containers and volumes
-- Provide `docker-compose.yml` for multi-container setups
-
-### Documentation
-
-- Use clear, concise language
-- Include working command examples
-- Add links to official Docker documentation
-- Follow the existing module format:
-  - Learning Objectives
-  - Concepts with examples (Diagrams preferred)
-  - Summary
-
-### Commit Messages
-
-Use conventional commit format:
-
-- `feat:` - New feature
-- `fix:` - Bug fix
-- `docs:` - Documentation changes
-- `refactor:` - Code refactoring
-
-## Questions?
-
-Open an issue or reach out to the maintainers.
+7. Open a **Pull Request** against the `main` branch.
 
 ---
 
-Thank you for contributing!
+## Style Guide
+
+### Dockerfiles & Configurations
+- **Best Practices**: Use multi-stage builds, pin base image tags (e.g., `alpine:3.19` or `golang:1.22-bookworm`), and avoid `:latest`.
+- **Security**: Run containers as non-root users (`USER nonroot` or `USER 10001`).
+- **Validation**: Lint Dockerfiles locally using Hadolint (`hadolint Dockerfile`).
+- **Compose Files**: Use modern Compose specification (omit deprecated `version:` top-level attribute).
+
+### Documentation & Guides
+- Use clear, professional, technical English.
+- Include working CLI command snippets and sample expected outputs.
+- Include ASCII architectural flow diagrams or container lifecycle transitions where helpful.
+- Reference official Docker documentation ([docs.docker.com](https://docs.docker.com/)).
+- Maintain sequential chapter numbering (`01-`, `02-`, etc.) to preserve directory sorting.
+
+### Commit Messages
+We follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
+- `feat:` – New chapter, guide, or feature addition
+- `fix:` – Bug fix, Dockerfile correction, or typo fix
+- `docs:` – Documentation updates or formatting adjustments
+- `refactor:` – Reorganizing chapters, updating naming, or streamlining configurations
+
+---
+
+## Questions & Support
+
+Feel free to open a GitHub Discussion or Issue for any questions.
+
+Thank you for contributing to **Awesome Docker**!
